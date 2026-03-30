@@ -1,0 +1,146 @@
+   /* ===== RESET BASICO ===== */
+* {
+margin: 0;                                /* Elimina margenes por defecto */
+padding: 0;                               /* Elimina relleno por defecto */
+box-sizing: border-box;                   /* Los bordes se incluyen en el ancho */
+}
+/* ===== TIPOGRAFIA BASE ===== */
+body {
+font-family: 'Segoe UI', Arial, sans-serif;
+font-size: 16px;                     /* Tamanio base */
+line-height: 1.6;                    /* Espacio entre lineas */
+color: #333333;                      /* Gris oscuro para el texto */
+background-color: #f5f5f5;           /* Fondo gris claro */                                         
+}                     
+            /* ===== HEADER ===== */
+header {
+background-color: #1565C0;             /* Azul primario */
+color: white;
+text-align: center;
+padding: 2rem;                         /* Espacio interno */
+}
+            /* ===== NAV ===== */
+nav {
+background-color: #0D47A1;             /* Azul oscuro */
+padding: 1rem;
+text-align: center;
+}
+nav a {
+color: white;
+text-decoration: none;                  /* Sin subrayado */
+margin: 0 1rem;                         /* Espacio entre links */
+font-weight: bold;
+}
+nav a:hover {
+text-decoration: underline;             /* Subrayado al pasar el mouse */
+}
+            /* ===== FOOTER ===== */
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 1rem;
+}
+            /* ===== MAIN ===== */
+main {
+max-width: 900px;                     /* Ancho maximo */
+margin: 0 auto;                       /* Centrar horizontalmente */
+padding: 2rem;
+}
+            /* ===== SECCIONES ===== */
+section {
+background-color: white;
+border-radius: 8px;                   /* Esquinas redondeadas */
+padding: 2rem;
+margin-bottom: 2rem;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+}
+                    /* ===== IMAGENES ===== */
+img {
+max-width: 100%;                      /* Nunca mas ancho que su contenedor */
+height: auto;                         /* Mantiene proporcion */
+border-radius: 8px;
+}
+                    /* ===== LISTAS ===== */
+ul, ol {
+padding-left: 2rem;                    /* Indentacion de la lista */
+margin-bottom: 1rem;
+}
+.tarjeta {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;        
+    border-radius: 8px;
+    box-shadow: 0  4px  6px
+    rgba(0,0,0,0.1);
+}
+.contenedor-pricipal{
+    max-width: 900px;
+    margin: 20px  auto;
+    padding: 0 20px;
+}
+section:hover { 
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input:not([type="checkbox"]), 
+textarea, 
+select {
+    width: 100%; 
+    padding: 10px;
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* (c) Estilo Focus */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); 
+
+/* (a) Validación: Válido */
+input:valid:not(:placeholder-shown), 
+textarea:valid:not(:placeholder-shown) {
+    border: 2px solid #27ae60;
+    background-color: #f0fff4; 
+}
+
+/* (b) Validación: Inválido */
+input:invalid:not(:placeholder-shown), 
+textarea:invalid:not(:placeholder-shown) {
+    border: 2px solid #e74c3c;
+    background-color: #fff5f5; /* Fondo claro */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #34495e;
+}}
