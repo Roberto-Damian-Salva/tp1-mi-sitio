@@ -1,0 +1,78 @@
+:root {
+    --primario: #4f46e5;
+    --fondo: #f8fafc;
+    --texto: #1e293b;
+    --rojo: #ef4444;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--texto);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 { text-align: center; color: var(--primario); }
+
+/* Input estilizado con :focus */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--primario);
+}
+
+button#add-btn {
+    background: var(--primario);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Lista de tareas */
+ul { list-style: none; padding: 0; margin-top: 20px; }
+
+.tarea-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+    transition: all 0.3s ease; /* Transiciones (Punto 3e) */
+}
+
+/* Efecto de tachado (Punto 3b) */
+.completada .texto-tarea {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.btn-delete {
+    background: var(--rojo);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
